@@ -1,0 +1,100 @@
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  padding: 100px 0px;
+}
+.friends-view{
+  .container{
+    
+    .-left{
+      /* All Options */
+      .-options{
+        margin-bottom: 30px;
+        text-align: center;
+        a{
+          padding: 11px 5px;
+          border: 1px solid #ff7700;
+          box-shadow: 0 0 15px rgb(230, 230, 230);
+          color: black;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          transition: all .3s ease-in-out;
+          &:hover,
+          &.active{
+            background: #ff7700;
+            color: white;
+          }
+        }
+      }
+      /* Search Connections */
+      .-search-connection{
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        box-shadow: 0 0 15px rgb(230, 230, 230);
+        display: flex;
+        input{
+          width: 100%;
+          border: 1px solid #ff7700;
+          padding: 11px;
+          border-right: none;
+          outline: none;
+        }
+        button{
+          position: relative;
+          width: 70px;
+          outline: none;
+          border: 1px solid #ff7700;
+          background: #ff7700;
+          border-left: none;
+          i{
+            font-size: 18px;
+            position: absolute;
+            color: white;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      /* Connections */
+      .-connections{
+        margin-top: 70px;
+        text-align: center;
+        padding: 0px 12px;
+        .-each{
+          margin-bottom: 30px;
+          padding: 30px 0px 22px 0px ;
+          box-shadow: 0 0 15px rgb(230, 230, 230);
+        }
+        img{
+          width: 60%;
+        }
+        p{
+          margin: 0;
+          margin-top: 20px;
+          
+        }
+        .accept-ignore{
+          display: flex;
+          a{
+            padding: 11px 30px;
+            border: 1px solid #ff7700;
+            text-decoration: none;
+            margin-right: 20px;
+            color: black;
+            transition: all .3s ease-in-out;
+            &:last-of-type{
+             margin-right: 0;
+            }
+            &:hover{
+            background: #ff7700;
+            color: white;
+          }
+          }
+        }
+      }
+    }
+  }
+}
