@@ -24,8 +24,8 @@ body {
   text-decoration: none;
   display: block;
   width: 100%;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .friends-view .container .-left .-options a:hover, .friends-view .container .-left .-options a.active {
@@ -82,6 +82,7 @@ body {
   padding: 30px 0px 22px 0px;
   -webkit-box-shadow: 0 0 15px #e6e6e6;
           box-shadow: 0 0 15px #e6e6e6;
+  border-radius: 10px;
 }
 
 .friends-view .container .-left .-connections img {
@@ -90,7 +91,7 @@ body {
 
 .friends-view .container .-left .-connections p {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .friends-view .container .-left .-connections .accept-ignore {
@@ -105,8 +106,8 @@ body {
   text-decoration: none;
   margin-right: 20px;
   color: black;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .friends-view .container .-left .-connections .accept-ignore a:last-of-type {
@@ -115,6 +116,30 @@ body {
 
 .friends-view .container .-left .-connections .accept-ignore a:hover {
   background: #ff7700;
-  color: white;
+  color: #fff;
 }
+
+/*media queries*/
+/*Tablet version started*/
+@media (max-width: 992px) {
+  .friends-view .container .-left {
+    /* Connections */
+  }
+  .friends-view .container .-left .-connections p {
+    margin-bottom: 15px;
+  }
+  .friends-view .container .-left .-connections .accept-ignore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*Tablet version ended*/
 /*# sourceMappingURL=app.css.map */
